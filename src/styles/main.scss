@@ -6,7 +6,7 @@ body{
     background-color: variaveis.$principalColor;
 }
 .container{
-    max-width: 1160px;
+    max-width: 960px;
     width: 100%;
     margin: 0 auto;
 }
@@ -18,5 +18,6 @@ body{
     font-size: 32px;
 }
 .secundary-text{
-    font-size: 24px
+    font-size: 20px;
+    color: #fff;
 }
