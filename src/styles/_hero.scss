@@ -1,0 +1,11 @@
+.hero{
+    height: 80vh;
+    &__content{
+        color: #fff;
+        img{
+            width: 350px;
+            border-radius: 100%;
+            transform: rotate(-20deg);
+        }
+    }
+}

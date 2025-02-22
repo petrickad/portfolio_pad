@@ -1,0 +1,5 @@
+@use 'variaveis';
+header{
+    background: variaveis.$headerColor;
+    padding: 24px;
+}
