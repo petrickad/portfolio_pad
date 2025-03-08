@@ -1,6 +1,8 @@
 @use 'header';
 @use 'variaveis';
 @use 'hero';
+@use 'skills';
+@use 'projects';
 
 body{
     background-color: variaveis.$principalColor;
@@ -10,14 +12,42 @@ body{
     width: 100%;
     margin: 0 auto;
 }
+
+@mixin text($fontSize: 24ox){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$principalText;
+}
+
+@mixin title($fontSize: 40px){
+    @include text($fontSize);
+    color: variaveis.$titleColor;
+}
+
 .header-title{
-    font-size: 40px;
+    @include title(44px);
+}
+.name-text{
+    @include text(44px);
+    font-size: bold;
+    text-transform: uppercase;
+    color: variaveis.$highlightsText;
+}
+.section-title{
+    font-size: 34px;
     color: #fff;
 }
 .principal-text{
-    font-size: 32px;
+    @include text(32px);
 }
 .secundary-text{
     font-size: 20px;
     color: #fff;
+}
+
+.img-skills{
+    width: 80px;
+}
+.test{
+    height: 100vh;
 }

@@ -1,10 +1,44 @@
 .hero{
     &__content{
+        margin-bottom: 80px;
+        height: 80vh;
         color: #fff;
         img{
-            width: 250px;
+            width: 350px;
             border-radius: 100%;
             transform: rotate(-20deg);
+        }
+    }
+    &__about{
+        flex-direction: column;
+        &__line{
+            margin-bottom: 16px;
+            position: relative;
+            left: 25%;
+            width: 50%;
+            height: 2px;
+            background-color: #fff;
+        }
+        &__nav{
+            margin-bottom: 16px;
+
+            .nav-item{
+                cursor: pointer;
+                transition: all 1s;
+
+                &--is-active{
+                    border-bottom: 1px solid white;
+                    transition: all 1s;
+                }
+            }
+        }
+        .tab-pane {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .tab-pane.active {
+            opacity: 1 ;
         }
     }
 }

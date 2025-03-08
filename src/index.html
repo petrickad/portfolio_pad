@@ -6,7 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <header data-aos="fade" data-aos-delay="400" class="header">
@@ -18,38 +20,151 @@
         <div class="container">
             <div class="hero__content pt-5 pb-5 align-items-center d-flex justify-content-around">
                 <div class="hero__content__presentetion p-2">
-                    <h1> 
-                        <span data-aos="fade-in" data-aos-delay="800">
+                    <h1 class="m-0"> 
+                        <span class="fs-2" data-aos="fade-in" data-aos-delay="800">
                             Olá,
                         </span>
-                        <span data-aos="fade-in" data-aos-delay="1300">
+                        <span class="fs-2" data-aos="fade-in" data-aos-delay="1300">
                             me chamo
                         </span><br> 
-                        <span data-aos="fade-in" data-aos-delay="1700">
+                        <span class="name-text" data-aos="fade-in" data-aos-delay="1700">
                             Pétrick
                         </span>
-                        <span data-aos="fade-in" data-aos-delay="1900">
+                        <span class="name-text" data-aos="fade-in" data-aos-delay="1900">
                             Alves
                         </span>
-                        <span data-aos="fade-in" data-aos-delay="2100">
+                        <span class="name-text" data-aos="fade-in" data-aos-delay="2100">
                             Duarte
                         </span>
                     </h1>
-                    <p data-aos="fade-in" data-aos-delay="2500" class="principal-text">
+                    <p data-aos="fade-in" data-aos-delay="3000" class="fs-4 principal-text">
                         Desenvolvedor Front-End
                     </p>
                 </div>
                 <img data-aos="fade" data-aos-delay="2000" class="hero__content__avatar" src="images/avatar-removebg-preview.png" alt="">
             </div>
-            <div data-aos="fade" data-aos-delay="2800" class="hero__about d-flex text-center">
-                <p class="secundary-text text-align-center">
-                    Tenho 25 anos, e estudo análise e desenvolvimento de sistemas, também desenvolvimento fullstack java. Sou apaixonado pela tecnologia desde meus 5 anos de idade, e isso me motivou a buscar constantemente novas habilidades para enfrentar desafios mais complexos. Estou em busca de oportunidades que me permitam crescer profissionalmente e contribuir de maneira significativa nos projetos em que estarei envolvido.  
-                </p>
+            <div data-aos="fade-up" data-aos-duration="2000" class="hero__about d-flex">
+                <span class="hero__about__line"></span>
+                <nav class="hero__about__nav">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item nav-item--is-active">
+                            <a data-bs-target="#aba1" data-bs-toggle="tab" class="nav-link active">Sobre mim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-bs-target="#aba2" data-bs-toggle="tab" class="nav-link">Formação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-bs-target="#aba3" data-bs-toggle="tab" class="nav-link">Experiências</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-bs-target="#aba4" data-bs-toggle="tab" class="nav-link">Habilidades</a>
+                        </li>
+                    </ul> 
+                </nav>
+                <div class="tab-content d-flex justify-content-center">
+                    <div class="tab-pane active" id="aba1" data-aos="fade-up" data-aos-duration="1600">
+                        <p class="secundary-text text-center">
+                            Tenho 25 anos, e estudo análise e desenvolvimento de sistemas, também desenvolvimento fullstack java. Sou apaixonado pela tecnologia desde meus 5 anos de idade, e isso me motivou a buscar constantemente novas habilidades para enfrentar desafios mais complexos. Estou em busca de oportunidades que me permitam crescer profissionalmente e contribuir de maneira significativa nos projetos em que estarei envolvido.  
+                        </p>
+                    </div>
+                    <div class="tab-pane " id="aba2">
+                        <p class="secundary-text">
+                            <ul>
+                                <li>
+                                    <h2>Anhanguera</h2>
+                                    <p>Analise e Desenvolvimento de Sistemas</p>
+                                </li>
+                                <li>
+                                    <h2>EBAC - Escola Britânica de Artes e Ciências</h2>
+                                    <p>Analise e Desenvolvimento de Sistemas</p>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="tab-pane" id="aba3">
+                        <p class="secundary-text text-align-center">
+                            Tenho 25 anos, e estudo análise e desenvolvimento de sistemas, também desenvolvimento fullstack java. Sou apaixonado pela tecnologia desde meus 5 anos de idade, e isso me motivou a buscar constantemente novas habilidades para enfrentar desafios mais complexos. Estou em busca de oportunidades que me permitam crescer profissionalmente e contribuir de maneira significativa nos projetos em que estarei envolvido.  
+                        </p>
+                    </div>
+                    <div class="tab-pane" id="aba4">
+                        <p class="secundary-text text-align-center">
+                            Tenho 25 anos, e estudo análise e desenvolvimento de sistemas, também desenvolvimento fullstack java. Sou apaixonado pela tecnologia desde meus 5 anos de idade, e isso me motivou a buscar constantemente novas habilidades para enfrentar desafios mais complexos. Estou em busca de oportunidades que me permitam crescer profissionalmente e contribuir de maneira significativa nos projetos em que estarei envolvido.  
+                        </p>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
-    <section class="test">
-
+    <section class="skills" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <h1 class="section-title">Skills</h1>
+            <div class="skills__content">
+                <div class="row">
+                    <div class="col-4" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1300">
+                        <img class="img-skills" src="images/skills/html.png" alt="">
+                        <p>HTML</p>
+                    </div>
+                    <div class="col-4" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1500">
+                        <img class="img-skills" src="images/skills/css.png" alt="">
+                        <p>CSS</p>
+                    </div>
+                    <div class="col-4" data-aos="fade-up" data-aos-delay="1400" data-aos-duration="1700">
+                        <img class="img-skills" src="images/skills/script-java.png" alt="">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="col-4" data-aos="fade-up" data-aos-delay="1600" data-aos-duration="1900">
+                        <img class="img-skills" src="images/skills/jquery.png" alt=""></IMG>
+                        <p>jQuery</p>
+                    </div>
+                    <div class="col-4" data-aos="fade-up" data-aos-delay="1800" data-aos-duration="2100">
+                        <img class="img-skills" src="images/skills/bootstrap.png" alt="">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="col-4" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="2300">
+                        <img class="img-skills" src="images/skills/nodejs.png" alt="">
+                        <p>Node.js</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+        <div class="container">
+            <h1 class="section-title mb-5">
+                Projetos
+            </h1>
+            <div id="itens-carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://clone-disneyplus-seven-zeta.vercel.app/">
+                            <img src="images/projects/clonedisney.png" class="d-block w-100" alt="">
+                            <div class="carousel-caption">
+                                Clone Disney+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://hbo-animaisfantasticos.vercel.app/">
+                            <img src="images/projects/hboclone.png" class="d-block w-100" alt="">
+                            <div class="carousel-caption">
+                                HBO Animais Fantasticos
+                            </div>
+                        </a>
+                    </div>
+                    <button data-bs-target="#itens-carousel" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span id="seta" class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#itens-carousel" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span id="seta" class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button data-bs-target="#itens-carousel" class="active" data-bs-slide-to="0" type="buton"></button>
+                        <button data-bs-target="#itens-carousel" data-bs-slide-to="1" type="button"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
