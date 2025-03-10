@@ -6,8 +6,6 @@
             flex-direction: column-reverse;
         }
         &__presentetion{
-            @media (max-width: 767px) {
-            }
             .social_links{
                 display: flex;
                 justify-content: space-between;
@@ -32,6 +30,7 @@
                 width: 150px;
             }
         }
+        
     }
     &__about{
         flex-direction: column;
@@ -48,6 +47,16 @@
                     transition: all 1s;
                 }
             }
+        }
+        .formation,
+        .experience,
+        .container-ability{
+            color: #fff;
+        }
+        .container-ability{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
         }
         .tab-pane {
             opacity: 0;
