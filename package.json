@@ -1,18 +1,18 @@
 {
   "name": "port",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
   "scripts": {
     "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
+    "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.13.3",
-    "parcel": "^2.13.3",
-    "sharp": "^0.33.5"
+    "@parcel/transformer-sass": "^2.8.0",
+    "parcel": "^2.8.0",
+    "sharp": "^0.31.2"
   }
 }
