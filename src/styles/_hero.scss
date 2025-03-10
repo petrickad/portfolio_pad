@@ -1,24 +1,41 @@
 .hero{
     &__content{
-        margin-bottom: 80px;
         height: 80vh;
-        color: #fff;
+
+        @media (max-width: 767px){
+            flex-direction: column-reverse;
+        }
+        &__presentetion{
+            @media (max-width: 767px) {
+            }
+            .social_links{
+                display: flex;
+                justify-content: space-between;
+
+                a{
+                    i{
+                        font-size: 40px;
+
+                        @media (max-width: 767px) {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
         img{
             width: 350px;
             border-radius: 100%;
             transform: rotate(-20deg);
+
+            @media (max-width: 767px){
+                width: 150px;
+            }
         }
     }
     &__about{
         flex-direction: column;
-        &__line{
-            margin-bottom: 16px;
-            position: relative;
-            left: 25%;
-            width: 50%;
-            height: 2px;
-            background-color: #fff;
-        }
+        
         &__nav{
             margin-bottom: 16px;
 

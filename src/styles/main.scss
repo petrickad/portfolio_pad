@@ -3,6 +3,7 @@
 @use 'hero';
 @use 'skills';
 @use 'projects';
+@use 'container_line';
 
 body{
     background-color: variaveis.$principalColor;

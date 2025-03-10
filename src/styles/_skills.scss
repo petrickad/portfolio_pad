@@ -1,7 +1,7 @@
 .skills{
-    margin-top: 180px;
     display: flex;
     text-align: center;
+    flex-direction: column;
     
     &__content{
         margin-top: 50px;
@@ -19,6 +19,9 @@
                 p{
                     color: #fff;
                 }
+            }
+            @media (max-width: 767px) {
+                grid-template-columns: 1fr;
             }
         }
     }

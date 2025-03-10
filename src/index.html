@@ -16,35 +16,55 @@
             <h1 class="header-title">Bem-vindo ao meu Portfólio</h1>
         </div>
     </header>
-    <section class="hero d-flex align-items-center">
+    <section class="hero d-flex align-items-center" id="hero">
         <div class="container">
-            <div class="hero__content pt-5 pb-5 align-items-center d-flex justify-content-around">
+            <div class="hero__content align-items-center d-flex justify-content-around">
                 <div class="hero__content__presentetion p-2">
                     <h1 class="m-0"> 
-                        <span class="fs-2" data-aos="fade-in" data-aos-delay="800">
+                        <span class="fs-2" data-aos="fade-in" data-aos-delay="600">
                             Olá,
                         </span>
-                        <span class="fs-2" data-aos="fade-in" data-aos-delay="1300">
+                        <span class="fs-2" data-aos="fade-in" data-aos-delay="1100">
                             me chamo
                         </span><br> 
-                        <span class="name-text" data-aos="fade-in" data-aos-delay="1700">
+                        <span class="name-text" data-aos="fade-in" data-aos-delay="1400">
                             Pétrick
                         </span>
-                        <span class="name-text" data-aos="fade-in" data-aos-delay="1900">
+                        <span class="name-text" data-aos="fade-in" data-aos-delay="1600">
                             Alves
                         </span>
-                        <span class="name-text" data-aos="fade-in" data-aos-delay="2100">
+                        <span class="name-text" data-aos="fade-in" data-aos-delay="1800">
                             Duarte
                         </span>
                     </h1>
-                    <p data-aos="fade-in" data-aos-delay="3000" class="fs-4 principal-text">
+                    <p data-aos="fade-in" data-aos-delay="2500" class="fs-4 principal-text">
                         Desenvolvedor Front-End
                     </p>
+                    <div class="social_links">
+                        <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2600" href="https://wa.me/5551990159847?text=Olá%2C%20Pétrick!">
+                            <i class="bi-whatsapp"></i>
+                        </a>
+                        <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2700" href="https://www.instagram.com/_p_a_d/">
+                            <i class="bi-instagram"></i>
+                        </a>
+                        <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2800" href="https://github.com/petrickad">
+                            <i class="bi-github"></i>
+                        </a>
+                        <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2900" href="https://www.linkedin.com/in/petrick-alves-duarte-040056284/">
+                            <i class="bi-linkedin"></i>
+                        </a>
+                        <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000" href="mailto:petrick.duarte99@gmail.com">
+                            <i class="bi-envelope-at"></i>
+                        </a>
+
+                    </div>
                 </div>
                 <img data-aos="fade" data-aos-delay="2000" class="hero__content__avatar" src="images/avatar-removebg-preview.png" alt="">
             </div>
+            <div class="container_line">
+                <span data-aos="fade-in" data-aos-duration="1000" data-aos-delay="2000" class="container_line__line"></span>
+            </div>
             <div data-aos="fade-up" data-aos-duration="2000" class="hero__about d-flex">
-                <span class="hero__about__line"></span>
                 <nav class="hero__about__nav">
                     <ul class="nav justify-content-center">
                         <li class="nav-item nav-item--is-active">
@@ -92,11 +112,14 @@
                         </p>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
-    <section class="skills" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container_line">
+        <span data-aos="fade-in" data-aos-duration="1000" data-aos-delay="2000" class="container_line__line"></span>
+    </div>
+    <section id="skills" class="skills" data-aos="fade-up" data-aos-duration="1000">
+        <span data-aos="fade-in" data-aos-duration="1000" data-aos-delay="2000" class="line"></span>
         <div class="container">
             <h1 class="section-title">Skills</h1>
             <div class="skills__content">
@@ -128,13 +151,17 @@
                 </div>
             </div>
         </div>
+        <span data-aos="fade-in" data-aos-duration="1000" data-aos-delay="2000" class="line"></span>
     </section>
-    <section class="projects" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+    <div class="container_line">
+        <span data-aos="fade-in" data-aos-duration="1000" data-aos-delay="2000" class="container_line__line"></span>
+    </div>
+    <section class="projects" id="projects">
         <div class="container">
-            <h1 class="section-title mb-5">
+            <h1 data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" class="section-title mb-5">
                 Projetos
             </h1>
-            <div id="itens-carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div data-aos="fade-in" data-aos-delay="1200" data-aos-duration="1000" id="itens-carousel" class="p-5 carousel carousel-fade slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <a href="https://clone-disneyplus-seven-zeta.vercel.app/">
