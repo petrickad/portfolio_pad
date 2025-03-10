@@ -57,6 +57,9 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 32px;
+            @media (max-width: 767px) {
+                display: block;
+            }
         }
         .tab-pane {
             opacity: 0;
