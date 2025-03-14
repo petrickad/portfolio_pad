@@ -1,6 +1,8 @@
+@use 'variaveis';
+
 .hero{
     &__content{
-        height: 80vh;
+        height: 90vh;
 
         @media (max-width: 767px){
             flex-direction: column-reverse;
@@ -25,6 +27,47 @@
                         }
                     }
                     
+                }
+            }
+            .download-cv {
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                border: 2px solid variaveis.$highlightsText;
+                border-radius: 100px;
+                padding: 8px;
+                animation: leaveEffect 0.3s ease forwards;
+                color: #fff;
+                
+                i {
+                    margin-left: 16px;
+                }
+            
+                &:hover {
+                    animation: hoverEffect 0.3s ease forwards;
+                    color: variaveis.$principalColor;
+                    background-color: variaveis.$highlightsText;
+                }
+                @keyframes hoverEffect {
+                    0% {
+                        color: initial;
+                        background-color: initial;
+                    }
+                    100% {
+                        color: variaveis.$principalColor;
+                        background-color: variaveis.$highlightsText;
+                    }
+                }
+                @keyframes leaveEffect {
+                    0% {
+                        color: variaveis.$principalColor;
+                        background-color: variaveis.$highlightsText;
+                    }
+                    100% {
+                        color: variaveis.$highlightsText;
+                        background-color: initial;
+                    }
                 }
             }
         }
