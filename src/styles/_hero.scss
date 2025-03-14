@@ -2,7 +2,6 @@
 
 .hero{
     &__content{
-        height: 90vh;
 
         @media (max-width: 767px){
             flex-direction: column-reverse;
