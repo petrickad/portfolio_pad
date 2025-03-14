@@ -9,10 +9,16 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             justify-items: center;
-            .col-4{
+            .col-4{ 
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
                 padding-top: 15px;
                 margin-bottom: 50px;
                 width: 140px;
+                height: 140px;
                 border-radius: 50px;
                 box-shadow: inset 0 0 56px rgb(62, 58, 73);
                 
