@@ -12,7 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.0",
+    "cssnano": "^5.1.15",
     "parcel": "^2.8.0",
-    "sharp": "^0.31.2"
+    "postcss": "^8.5.3",
+    "sass": "^1.86.3",
+    "sharp": "^0.33.5"
   }
 }
